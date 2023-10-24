@@ -76,10 +76,11 @@ void loop() {
     Serial.print(c);
     Serial.print('\t');
     float d = GamePad.getYaxisData();
-    Serial.print("y_axis: ");
     Serial.println(d);
     Serial.println();
     
+    // hello bernardo was here 
+
     analogWrite(6, abs(d) * 35);
     analogWrite(5, abs(d) * 35); // Esta linha controla um motor usando a entrada do eixo X do gamepad virtual.
 }
